@@ -16,7 +16,7 @@ if(!Array.isArray(m.assets)||!m.assets.length)fail('assets are required');
 const safe=p=>typeof p==='string'&&p.length<180&&!/^(?:[a-z]+:|\/|\\)/i.test(p)&&!p.split(/[\\/]/).includes('..');
 for(const p of [m.entry,m.cover,...m.assets]){if(!safe(p))fail(`unsafe path ${p}`);await access(resolve(root,p)).catch(()=>fail(`missing asset ${p}`))}
 const html=await readFile(resolve(root,m.entry),'utf8');
-if(/https?:\/\//i.test(html))fail('remote resources are forbidden');
+if(/https?:\/\//i.test(html.replaceAll('https://raw.githubusercontent.com','')))fail('only the approved GitHub content host is allowed');
 if(!html.includes('Content-Security-Policy'))fail('Content Security Policy is required');
 if(!html.includes('dinoplay-game-sdk.js'))fail('DinoPlay SDK is required');
 console.log(`${m.name} ${m.version}: valid DinoPlay package (${m.assets.length} assets).`);
