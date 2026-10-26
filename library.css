@@ -1,0 +1,17 @@
+.selectors {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.selectors select {
+  padding-inline: 7px;
+}
+
+@media (max-width: 420px) {
+  .selectors {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .selectors #category {
+    grid-column: 1 / -1;
+  }
+}
