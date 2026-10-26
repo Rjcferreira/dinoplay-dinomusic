@@ -6,6 +6,12 @@
   padding-inline: 7px;
 }
 
+.controls button.on,
+#playerFavorite.on {
+  color: #17213c;
+  background: var(--accent);
+}
+
 @media (max-width: 420px) {
   .selectors {
     grid-template-columns: 1fr 1fr;

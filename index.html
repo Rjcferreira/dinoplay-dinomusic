@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="library.css"><main id="app">
   <header><button id="close" class="round" aria-label="Voltar">‹</button><div><small>DinoPlay</small><h1>DinoMusic</h1></div><button id="sound" class="round" aria-label="Som">🔊</button></header>
   <section class="hero"><div><small id="welcome">MÚSICA SEGURA PARA CRIANÇAS</small><h2 id="heroTitle">A tua música, à tua escolha</h2><p id="heroText">Instala álbuns completos ou apenas as músicas preferidas.</p></div><span>🎵🦕</span></section>
+  <div class="tabs"><button data-view="library" class="active" id="libraryTab">Biblioteca</button><button data-view="favorites" id="favoritesTab">♡ Favoritos</button></div>
   <label class="search"><span>🔎</span><input id="search" type="search" placeholder="Procurar música ou álbum" autocomplete="off" spellcheck="false"><button id="clear" class="hidden" aria-label="Limpar pesquisa">×</button></label>
   <div class="selectors"><select id="language" aria-label="Idioma"></select><select id="age" aria-label="Idade"></select><select id="category" aria-label="Género"></select></div>
   <section class="library"><div class="section-title"><div><small id="collectionLabel">A TUA COLEÇÃO</small><h2 id="songsTitle">Biblioteca musical</h2></div><span id="count">0</span></div><div id="albums" class="albums"></div><div id="empty" class="empty hidden"><span>🦕🎧</span><b id="emptyTitle">Nenhuma música encontrada</b></div></section>
