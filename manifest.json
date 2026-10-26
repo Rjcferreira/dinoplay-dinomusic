@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "dinomusic",
   "name": "DinoMusic",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "entry": "index.html",
   "category": "music",
   "age": "3+",
