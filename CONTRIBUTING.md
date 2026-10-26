@@ -19,7 +19,7 @@ Depois adiciona o álbum e as faixas a `catalog.json`. Usa identificadores minú
 - MP3 até 15 MB por faixa, sem publicidade, mensagens comerciais ou áudio oculto.
 - Capa PNG quadrada, com pelo menos 512 × 512 px, sem marcas de terceiros.
 - Idioma suportado (`pt-PT`, `pt-BR`, `en`, `fr`, `de`, `es`, `pl`) ou `all` para instrumental/universal.
-- Faixa etária no formato `3-5`, `3-7`, `6-8`, etc.
+- Uma das quatro faixas etárias oficiais: `0-2`, `3-5`, `6-10` ou `11-16`.
 - Título, descrição, autoria e licença verdadeiros e completos.
 - Letras são opcionais. Quando existem, devem corresponder exatamente ao áudio.
 - Não são permitidos conteúdos violentos, sexuais, discriminatórios, assustadores, recolha de dados, links, publicidade ou infrações de direitos de autor.
