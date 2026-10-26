@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "dinomusic",
   "name": "DinoMusic",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "entry": "index.html",
   "category": "music",
   "age": "3+",
@@ -25,6 +25,7 @@
   "assets": [
     "index.html",
     "style.css",
+    "status.css",
     "game.js",
     "catalog.json",
     "cover.png",
